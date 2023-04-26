@@ -35,8 +35,7 @@ source venv/bin/activate`
 
 4.  Open the `.env` file and fill in the required information:
 
-````
-## AI Assistant
+```
 AI_AGENT_NAME=<Your AI Agent Name>
 AI_AGENT_ROLE=<Description of the AI Agent's role and company>
 
@@ -57,7 +56,8 @@ TWILIO_ACCOUNT_TOKEN=<Your Twilio Account Token>
 TWILIO_WHATSAPP_NUMBER=whatsapp:+<Your Verified WhatsApp Number>
 
 ## PostgreSQL Database
-DATABASE_URL=<Your PostgreSQL Connection String>```
+DATABASE_URL=<Your PostgreSQL Connection String>
+```
 
 5.  Run the application:
 
@@ -68,7 +68,9 @@ DATABASE_URL=<Your PostgreSQL Connection String>```
 
 ## Postgres and Pinecone
 
-This project uses postgres to store the user's message to retrieve the last 10 message to include in the context of the chat. Also use these messages to retrieve relevant history from Pinecone.
+This project uses postgreSQL to store the user's message and AI replies to retrieve the last 10 message to include in the context of the chat. Also use these messages to retrieve relevant history from Pinecone.
+
+Since pinecone we can't retrieve messages based on datetime, postgreSQL seem a good option for that
 
 This will give support for long history
 
@@ -78,5 +80,5 @@ Please feel free to submit issues and pull requests for bug fixes or new feature
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](https://chat.openai.com/LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/jasielmacedo/gpt-for-whatsapp/blob/main/LICENSE) file for details.
 ````
