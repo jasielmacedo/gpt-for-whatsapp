@@ -67,6 +67,19 @@ DATABASE_URL=<Your PostgreSQL Connection String>
 
 6.  The server will start running at [http://localhost:5000](http://localhost:5000/). You can now use the AI-WhatsApp Assistant by sending a message to your Twilio WhatsApp number.
 
+## Configuring Twilio Account
+
+To set up a free Twilio account and configure it for the AI-WhatsApp Assistant, follow these steps:
+
+1.  Sign up for a free Twilio account at [https://www.twilio.com/try-twilio](https://www.twilio.com/try-twilio).
+2.  Once your account is created and you're logged in, navigate to the [Twilio Console](https://www.twilio.com/console).
+3.  Configure the whatsapp API on `Develop > Messaging > Try it out > Send a Whatsapp Message`
+4.  Go to the 'Sandbox Settings' section and configure the webhook for incoming messages. This repo will provide `https://yourserver.com/chat` and `https://yourserver.com/status_check` to use as webhook.
+5.  Save the changes by clicking on the 'Save' button at the bottom of the page.
+6.  In the Twilio Console, navigate to the 'Settings' > 'WhatsApp Sandbox' section.
+7.  Follow the instructions to link your WhatsApp account to the Twilio Sandbox. Send the provided code from your WhatsApp account to the Twilio Sandbox number.
+8.  Once your WhatsApp number is linked to the Twilio Sandbox, you can use it to send messages to the AI WhatsApp Assistant.
+9.  Don't forget to update the `.env` file in your project with your Twilio Account SID, Account Token, and WhatsApp number.
 
 ## Postgres and Pinecone
 
@@ -83,4 +96,7 @@ Please feel free to submit issues and pull requests for bug fixes or new feature
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](https://github.com/jasielmacedo/gpt-for-whatsapp/blob/main/LICENSE) file for details.
-````
+
+```
+
+```
