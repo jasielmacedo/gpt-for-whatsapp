@@ -1,5 +1,7 @@
 ## GPT-4 / GPT-3 for Whatsapp
 
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/jasielmacedo/gpt-for-whatsapp)
+
 GPT for Whatsapp is an open-source project that integrates OpenAI GPT-3 and GPT-4 with WhatsApp using the Twilio API. This project allows users to chat with an AI agent through WhatsApp, making it easy for them to get instant responses and assistance.
 
 ## Features
