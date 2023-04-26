@@ -1,0 +1,67 @@
+{
+  "name": "GPT for Whatsapp",
+  "description": "An open-source project that integrates OpenAI GPT-3 and GPT-4 with WhatsApp using the Twilio API.",
+  "env": {
+    "ENVIRONMENT": {
+      "description": "Application environment",
+      "value": "development"
+    },
+    "VERSION": {
+      "description": "Application version",
+      "value": "0.1.0"
+    },
+    "AI_AGENT_NAME": {
+      "description": "Name of the AI Agent",
+      "value": ""
+    },
+    "AI_AGENT_ROLE": {
+      "description": "Description of the AI Agent's role and company",
+      "value": ""
+    },
+    "OPENAI_API_KEY": {
+      "description": "Your OpenAI API Key",
+      "value": ""
+    },
+    "OPENAI_CHAT_MODEL": {
+      "description": "OpenAI chat model to be used",
+      "value": "gpt-3.5-turbo"
+    },
+    "OPENAI_CHAT_TOKEN_LIMIT": {
+      "description": "OpenAI chat token limit",
+      "value": "4000"
+    },
+    "PINECONE_API_KEY": {
+      "description": "Your Pinecone API Key",
+      "value": ""
+    },
+    "PINECONE_API_ENVIRONMENT": {
+      "description": "Your Pinecone Environment",
+      "value": ""
+    },
+    "PINECONE_POD_TYPE": {
+      "description": "Pinecone pod type",
+      "value": "p1"
+    },
+    "PINECONE_TABLE_NAME": {
+      "description": "Pinecone table name",
+      "value": "gpt-twilio"
+    },
+    "TWILIO_ACCOUNT_SID": {
+      "description": "Your Twilio Account SID",
+      "value": ""
+    },
+    "TWILIO_ACCOUNT_TOKEN": {
+      "description": "Your Twilio Account Token",
+      "value": ""
+    },
+    "TWILIO_WHATSAPP_NUMBER": {
+      "description": "Your verified WhatsApp number for Twilio",
+      "value": "whatsapp:+XXXXXXXXXXX"
+    },
+    "DATABASE_URL": {
+      "description": "Your PostgreSQL Connection String",
+      "value": ""
+    }
+  },
+  "repository": "https://github.com/jasielmacedo/gpt-for-whatsapp"
+}
